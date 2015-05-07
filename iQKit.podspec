@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/iqnect-org/iqkit-ios.git", :tag => s.version.to_s }
   
-  s.source_files = "iQKit/include/**/*.h"
+  s.public_header_files = "iQKit/include/**/*.h"
   s.resources = "iQKit/iQKitResources.bundle"
   s.vendored_libraries = 'iQKit/libiQKit.a'
   s.frameworks = "AVFoundation", "CoreLocation", "CoreText"
