@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "iQKit"
-  s.version      = "0.8"
+  s.version      = "0.8.1"
   s.summary      = "Search by iQNECT."
   s.description  = <<-DESC
                    Search by iQNECT
@@ -17,6 +17,9 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/iqnect-org/iqkit-ios.git", :tag => s.version.to_s }
   
+  s.source_files = "iQKit/include/iQKit/*.h"
+  s.public_header_files = "iQKit/include/iQKit/*.h"
+
   s.resources = "iQKit/iQKitResources.bundle"
   s.vendored_libraries = 'iQKit/libiQKit.a'
   s.frameworks = "AVFoundation", "CoreLocation", "CoreText"
