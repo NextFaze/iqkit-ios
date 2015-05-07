@@ -1,0 +1,30 @@
+PODS:
+  - iQKit (0.1.0):
+    - NFAllocInit (~> 1.0)
+    - SDWebImage (~> 3.7)
+    - SVProgressHUD (~> 1.0)
+  - NFAllocInit (1.0.9)
+  - SDWebImage (3.7.2):
+    - SDWebImage/Core (= 3.7.2)
+  - SDWebImage/Core (3.7.2)
+  - SVProgressHUD (1.1.3)
+  - SVWebViewController (1.0)
+
+DEPENDENCIES:
+  - iQKit (from `..`)
+  - NFAllocInit (~> 1.0)
+  - SVProgressHUD (~> 1.0)
+  - SVWebViewController (~> 1.0)
+
+EXTERNAL SOURCES:
+  iQKit:
+    :path: ..
+
+SPEC CHECKSUMS:
+  iQKit: 883ade26f6f77348699eb0d93efb6b8f3cb22044
+  NFAllocInit: ef7a8a8022d648bad86867b4aead9122a5d6054f
+  SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
+  SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
+  SVWebViewController: c36dda7326e81fcae0abf5d02bf7bbf7e41be901
+
+COCOAPODS: 0.36.4
