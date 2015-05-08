@@ -1,5 +1,5 @@
 PODS:
-  - iQKit (0.1.0):
+  - iQKit (0.8.1):
     - NFAllocInit (~> 1.0)
     - SDWebImage (~> 3.7)
     - SVProgressHUD (~> 1.0)
@@ -21,7 +21,7 @@ EXTERNAL SOURCES:
     :path: ..
 
 SPEC CHECKSUMS:
-  iQKit: 883ade26f6f77348699eb0d93efb6b8f3cb22044
+  iQKit: 7508c14126329eb7f3b6a761c5efea66cbaaf0c5
   NFAllocInit: ef7a8a8022d648bad86867b4aead9122a5d6054f
   SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
   SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
