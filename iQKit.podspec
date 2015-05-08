@@ -25,7 +25,6 @@ Pod::Spec.new do |s|
   s.frameworks = "AVFoundation", "CoreLocation", "CoreText"
   s.requires_arc = true
 
-  s.dependency 'SDWebImage', '~> 3.7'
   s.dependency 'NFAllocInit', '~> 1.0'
   s.dependency 'SVProgressHUD', '~> 1.0'
 
