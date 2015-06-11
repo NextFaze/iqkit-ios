@@ -21,13 +21,23 @@ typedef NS_ENUM(NSInteger, iQScannerViewControllerIntent) {
 @protocol iQScannerViewControllerDelegate <NSObject>
 
 - (void)scannerViewController:(iQScannerViewController *)scannerViewController didLoadSearchResponse:(iQAPISearchResponse *)searchResponse;
+- (void)scannerViewController:(iQScannerViewController *)scannerViewController didSearchWithKeyword:(NSString *)keyword;
 @optional
+- (void)scannerViewControllerDidTapMusic:(iQScannerViewController *)scannerViewController;
 - (void)scannerViewControllerDidCancel:(iQScannerViewController *)scannerViewController;
+- (void)scannerViewControllerDidTapMic:(iQScannerViewController *)scannerViewController;
 
 @end
 
 @interface iQScannerViewController : iQViewController <AVCaptureMetadataOutputObjectsDelegate, AVCaptureVideoDataOutputSampleBufferDelegate>
 
 @property (nonatomic, assign) NSObject<iQScannerViewControllerDelegate> *delegate;
+
+/*!
+ @abstract Determines how the scanner should handle failed image searches.
+ 
+ @param handleFailedImages - If YES, the scanner will present a form for the user to submit the failed image to the image database. If NO the scanner will return with a nil response. Defaults to YES.
+ */
+@property (nonatomic, assign) BOOL handleFailedImages;
 
 @end

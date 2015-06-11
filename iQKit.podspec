@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "iQKit"
-  s.version      = "0.8.1"
+  s.version      = "0.8.2"
   s.summary      = "Search by iQNECT."
   s.description  = <<-DESC
                    Search by iQNECT
@@ -27,5 +27,6 @@ Pod::Spec.new do |s|
 
   s.dependency 'NFAllocInit', '~> 1.0'
   s.dependency 'SVProgressHUD', '~> 1.0'
+  s.dependency 'TPKeyboardAvoiding', '~> 1.0'
 
 end

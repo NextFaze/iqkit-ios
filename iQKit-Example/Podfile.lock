@@ -1,14 +1,12 @@
 PODS:
-  - iQKit (0.8.1):
+  - iQKit (0.8.2):
     - NFAllocInit (~> 1.0)
-    - SDWebImage (~> 3.7)
     - SVProgressHUD (~> 1.0)
+    - TPKeyboardAvoiding (~> 1.0)
   - NFAllocInit (1.0.9)
-  - SDWebImage (3.7.2):
-    - SDWebImage/Core (= 3.7.2)
-  - SDWebImage/Core (3.7.2)
   - SVProgressHUD (1.1.3)
   - SVWebViewController (1.0)
+  - TPKeyboardAvoiding (1.2.6)
 
 DEPENDENCIES:
   - iQKit (from `..`)
@@ -21,10 +19,10 @@ EXTERNAL SOURCES:
     :path: ..
 
 SPEC CHECKSUMS:
-  iQKit: 7508c14126329eb7f3b6a761c5efea66cbaaf0c5
+  iQKit: 4d5206d2e0615d9b64f0e915b668c509b77fcef6
   NFAllocInit: ef7a8a8022d648bad86867b4aead9122a5d6054f
-  SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
   SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
   SVWebViewController: c36dda7326e81fcae0abf5d02bf7bbf7e41be901
+  TPKeyboardAvoiding: ee4dd35e3bb7bb64bfbda47e7cc9ba872ff10f77
 
-COCOAPODS: 0.36.4
+COCOAPODS: 0.37.1

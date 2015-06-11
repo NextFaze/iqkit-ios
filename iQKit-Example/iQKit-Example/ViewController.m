@@ -87,6 +87,21 @@
 
 #pragma mark - iQScannerViewControllerDelegate
 
+- (void)scannerViewController:(iQScannerViewController *)scannerViewController didSearchWithKeyword:(NSString *)keyword
+{
+    
+}
+
+- (void)scannerViewControllerDidTapMic:(iQScannerViewController *)scannerViewController
+{
+    
+}
+
+- (void)scannerViewControllerDidTapMusic:(iQScannerViewController *)scannerViewController
+{
+    
+}
+
 - (void)scannerViewController:(iQScannerViewController *)scannerViewController didLoadSearchResponse:(iQAPISearchResponse *)searchResponse
 {
     [scannerViewController dismissViewControllerAnimated:YES completion:^{
