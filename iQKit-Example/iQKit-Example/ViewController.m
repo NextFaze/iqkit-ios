@@ -81,7 +81,7 @@
         SVModalWebViewController *webViewController = [[SVModalWebViewController alloc] initWithURL:searchResponse.payload];
         [self presentViewController:webViewController animated:YES completion:nil];
     } else {
-        [SVProgressHUD showErrorWithStatus:@"No result found." maskType:SVProgressHUDMaskTypeBlack];
+        [SVProgressHUD showErrorWithStatus:@"No result found."];
     }
 }
 
@@ -95,6 +95,11 @@
 }
 
 - (void)scannerViewControllerDidCancel:(iQScannerViewController *)scannerViewController
+{
+    [scannerViewController dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)scannerViewController:(iQScannerViewController *)scannerViewController didSearchWithKeyword:(NSString *)keyword
 {
     [scannerViewController dismissViewControllerAnimated:YES completion:nil];
 }

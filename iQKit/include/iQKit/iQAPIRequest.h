@@ -15,6 +15,8 @@
 
 @property (nonatomic, readonly) NSMutableDictionary *params;
 @property (nonatomic, readonly) NSDateFormatter *dateFormatter;
+@property (nonatomic, readonly) iQAPIErrorResponse *errorResponse;
+@property (nonatomic, assign) BOOL needsSigning;
 
 - (NSURL *)URLWithEndpoint:(NSString *)endpoint;
 - (NSURL *)URLWithEndpoint:(NSString *)endpoint andParams:(NSDictionary *)params;
@@ -27,6 +29,8 @@
 - (void)sendRequest:(NSURLRequest *)request withCompletionHandler:(void (^)(NSInteger statusCode, id jsonObject))completionHandler;
 
 #pragma mark - Public
+
+@property (nonatomic, assign) BOOL isLegacyRequest;
 
 + (instancetype)request;
 - (void)runWithCompletionHandler:(void (^)(void))handler;
