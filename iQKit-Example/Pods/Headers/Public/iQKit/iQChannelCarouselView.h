@@ -1,0 +1,1 @@
+../../../../../iQKit/include/iQKit/iQChannelCarouselView.h

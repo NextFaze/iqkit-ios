@@ -12,6 +12,7 @@
 @interface iQAPISearchRequest : iQAPIRequest
 
 + (instancetype)requestWithKeyword:(NSString *)keyword;
++ (instancetype)requestWithBarcode:(NSString *)barcode;
 + (instancetype)requestWithImage:(UIImage *)image;
 + (instancetype)requestWithImageData:(NSData *)imageData;
 + (instancetype)requestWithBeacon:(CLBeacon *)beacon;

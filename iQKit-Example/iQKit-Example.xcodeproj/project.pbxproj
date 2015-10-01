@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44124A6B1BBCF4F400083628 /* MyIQMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44124A6A1BBCF4F400083628 /* MyIQMainViewController.m */; settings = {ASSET_TAGS = (); }; };
 		7C6AACF11AF85499004D52A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6AACF01AF85499004D52A7 /* main.m */; };
 		7C6AACF41AF85499004D52A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6AACF31AF85499004D52A7 /* AppDelegate.m */; };
 		7C6AACF71AF85499004D52A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6AACF61AF85499004D52A7 /* ViewController.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44124A691BBCF4F400083628 /* MyIQMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyIQMainViewController.h; sourceTree = "<group>"; };
+		44124A6A1BBCF4F400083628 /* MyIQMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyIQMainViewController.m; sourceTree = "<group>"; };
 		7C6AACEB1AF85499004D52A7 /* iQKit-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iQKit-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C6AACEF1AF85499004D52A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C6AACF01AF85499004D52A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -73,6 +76,8 @@
 				7C6AACFB1AF85499004D52A7 /* Images.xcassets */,
 				7C6AACFD1AF85499004D52A7 /* LaunchScreen.xib */,
 				7C6AACEE1AF85499004D52A7 /* Supporting Files */,
+				44124A691BBCF4F400083628 /* MyIQMainViewController.h */,
+				44124A6A1BBCF4F400083628 /* MyIQMainViewController.m */,
 			);
 			path = "iQKit-Example";
 			sourceTree = "<group>";
@@ -131,7 +136,7 @@
 		7C6AACE31AF85499004D52A7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = iQNECT;
 				TargetAttributes = {
 					7C6AACEA1AF85499004D52A7 = {
@@ -211,6 +216,7 @@
 				7C6AACF71AF85499004D52A7 /* ViewController.m in Sources */,
 				7C6AACF41AF85499004D52A7 /* AppDelegate.m in Sources */,
 				7C6AACF11AF85499004D52A7 /* main.m in Sources */,
+				44124A6B1BBCF4F400083628 /* MyIQMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +263,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -324,6 +331,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "iQKit-Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.iqnect.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -336,6 +344,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "iQKit-Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.iqnect.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

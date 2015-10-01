@@ -19,6 +19,8 @@
 @property (nonatomic, strong) NSString *ruleID;
 @property (nonatomic, strong) NSURL *payload;
 @property (nonatomic, strong) NSString *searchBarTitle;
+@property (nonatomic, strong) NSString *popupMessage;
+@property (nonatomic, strong) NSString *htmlString;
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 - (NSDictionary *)dictionaryRepresentation;
