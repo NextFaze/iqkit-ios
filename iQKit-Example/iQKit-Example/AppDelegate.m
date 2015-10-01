@@ -22,6 +22,8 @@
     [iQKit setAppID:@"APP-ID"
        andAppSecret:@"APP-SECRET"];
     
+    [iQKit setAPIBasePath:@"http://cloud-capi.iqnect.org/"];
+    
     return YES;
 }
 

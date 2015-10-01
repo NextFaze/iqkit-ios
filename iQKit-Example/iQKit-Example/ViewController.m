@@ -10,8 +10,11 @@
 #import "SVProgressHUD.h"
 #import "SVWebViewController.h"
 #import <MobileCoreServices/UTCoreTypes.h>
+#import "MyIQMainViewController.h"
 
 @interface ViewController () <iQScannerViewControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate>
+
+@property (strong, nonatomic) MyIQMainViewController *mainViewController;
 
 @end
 
@@ -20,6 +23,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.mainViewController = [[MyIQMainViewController alloc] init];
     
     CGFloat padding = 20.0;
     
@@ -39,8 +44,16 @@
     [galleryButton addTarget:self action:@selector(galleryButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:galleryButton];
     
+    UIButton *iqMainButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    iqMainButton.frame = CGRectMake(padding, galleryButton.bottom + padding, scannerButton.width, scannerButton.height);
+    iqMainButton.backgroundColor = [UIColor lightGrayColor];
+    iqMainButton.layer.cornerRadius = 4.0;
+    [iqMainButton setTitle:@"iQ Main View" forState:UIControlStateNormal];
+    [iqMainButton addTarget:self action:@selector(iqMainButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:iqMainButton];
+    
     UITextField *textField = [[UITextField alloc] init];
-    textField.frame = CGRectMake(padding, galleryButton.bottom + padding, scannerButton.width, scannerButton.height);
+    textField.frame = CGRectMake(padding, iqMainButton.bottom + padding, scannerButton.width, scannerButton.height);
     textField.backgroundColor = [[UIColor lightGrayColor] colorWithAlphaComponent:0.2];
     textField.layer.cornerRadius = 4.0;
     textField.placeholder = @"Enter Keyword";
@@ -71,6 +84,11 @@
     imagePickerController.delegate = self;
     imagePickerController.allowsEditing = NO;
     [self presentViewController:imagePickerController animated:YES completion:nil];
+}
+
+- (void)iqMainButtonTapped:(id)sender
+{
+    [self presentViewController:self.mainViewController animated:YES completion:nil];
 }
 
 #pragma mark -

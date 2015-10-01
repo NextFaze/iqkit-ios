@@ -8,11 +8,10 @@
 
 #import "iQViewController.h"
 #import "iQChannelCarouselView.h"
-#import "IQScannerViewController.h"
+#import "iQScannerViewController.h"
 #import "iQChannel.h"
 #import "iQManageChannelsViewController.h"
 #import "iQSpeechViewController.h"
-//#import "IQChangingButton.h"
 #import "iQMainButtonView.h"
 #import "iQMusicPayloadViewController.h"
 #import "iQBrowserTab.h"

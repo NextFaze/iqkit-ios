@@ -14,6 +14,7 @@
 #import "iQNetworkStatus.h"
 #import "iQDataStore.h"
 #import "iQKitMusicDetection.h"
+#import "iQMainViewController.h"
 
 typedef NS_ENUM(NSUInteger, iQKitAPIServer) {
     iQKitAPIServerProduction,
