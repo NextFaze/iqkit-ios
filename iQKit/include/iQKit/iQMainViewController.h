@@ -17,6 +17,8 @@
 #import "iQBrowserTab.h"
 #import "iQTabSwitcherViewController.h"
 
+typedef void(^iQSearchResponseCompletionBlock) (void);
+
 @interface iQMainViewController : iQViewController <UIScrollViewDelegate, iQManageChannelsViewControllerDelegate, iQKitSpeechViewControllerDelegate, iQMusicPayloadViewControllerDelegate, iQViewControllerDelegate, iQChannelCarouselViewDelegate, iQScannerViewControllerDelegate, iQTabSwitcherViewControllerDelegate>
 
 @property (nonatomic, strong) iQChannelCarouselView *channelCarouselView;

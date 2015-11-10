@@ -1,5 +1,5 @@
 PODS:
-  - iQKit (0.9.0):
+  - iQKit (0.9.1):
     - Masonry
     - NFAllocInit (~> 1.0)
     - OpenCV (= 2.4.9)
@@ -8,7 +8,7 @@ PODS:
     - SDWebImage (= 3.7.1)
     - SVProgressHUD (= 1.0)
     - TPKeyboardAvoiding (~> 1.0)
-    - youtube-ios-player-helper (~> 0.1.1)
+    - youtube-ios-player-helper (~> 0.1.4)
   - Masonry (0.6.3)
   - NFAllocInit (1.0.9)
   - OpenCV (2.4.9)
@@ -19,8 +19,8 @@ PODS:
   - SDWebImage/Core (3.7.1)
   - SVProgressHUD (1.0)
   - SVWebViewController (1.0)
-  - TPKeyboardAvoiding (1.2.9)
-  - youtube-ios-player-helper (0.1.4)
+  - TPKeyboardAvoiding (1.2.10)
+  - youtube-ios-player-helper (0.1.5)
 
 DEPENDENCIES:
   - iQKit (from `..`)
@@ -33,7 +33,7 @@ EXTERNAL SOURCES:
     :path: ".."
 
 SPEC CHECKSUMS:
-  iQKit: bdd4946f1de4a2b383fd2e4f5ec7f4377d2480ef
+  iQKit: d8b7fe9f7ee336a71ea8f636d2bf188bdc9c8a2d
   Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
   NFAllocInit: ef7a8a8022d648bad86867b4aead9122a5d6054f
   OpenCV: bb17904e55fc19b1f0f6c3e29bc04a7dd31eddb9
@@ -42,7 +42,7 @@ SPEC CHECKSUMS:
   SDWebImage: ed3095af2ff88b436426037444979b917f6c5575
   SVProgressHUD: 46088807596a795cbcb4affd92cf3f13b6ab3dda
   SVWebViewController: c36dda7326e81fcae0abf5d02bf7bbf7e41be901
-  TPKeyboardAvoiding: ff1ee4e5a5a0c119b965552af8f183868ea20207
-  youtube-ios-player-helper: 84b1485ebb4b7c6b619c6e05edcb55186723a7c6
+  TPKeyboardAvoiding: 614ebec846ec28b83d548769297fa5fb56468904
+  youtube-ios-player-helper: 8706bb155ffee74fbe5f2f5cf41c2dafe60dc155
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0

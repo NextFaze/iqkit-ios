@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "iQKit"
-  s.version      = "0.9.0"
+  s.version      = "0.9.1"
   s.summary      = "Search by iQNECT."
   s.description  = <<-DESC
                    Search by iQNECT
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   s.dependency 'SVProgressHUD', '1.0'
   s.dependency 'TPKeyboardAvoiding', '~> 1.0'
   s.dependency 'SDWebImage', '3.7.1'
-  s.dependency 'youtube-ios-player-helper', '~> 0.1.1'
+  s.dependency 'youtube-ios-player-helper', '~> 0.1.4'
   s.dependency 'REFrostedViewController', '2.4.8'
   s.dependency 'SBJson', '~> 4.0.1'
   s.dependency 'Masonry'
