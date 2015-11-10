@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		44124A6B1BBCF4F400083628 /* MyIQMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44124A6A1BBCF4F400083628 /* MyIQMainViewController.m */; settings = {ASSET_TAGS = (); }; };
+		44124A6B1BBCF4F400083628 /* MyIQMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44124A6A1BBCF4F400083628 /* MyIQMainViewController.m */; };
 		7C6AACF11AF85499004D52A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6AACF01AF85499004D52A7 /* main.m */; };
 		7C6AACF41AF85499004D52A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6AACF31AF85499004D52A7 /* AppDelegate.m */; };
 		7C6AACF71AF85499004D52A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6AACF61AF85499004D52A7 /* ViewController.m */; };
@@ -120,6 +120,7 @@
 				7C6AACE81AF85499004D52A7 /* Frameworks */,
 				7C6AACE91AF85499004D52A7 /* Resources */,
 				4B4AA0F4A7C4DC59B15832CD /* Copy Pods Resources */,
+				9CD0C1837F90ABFF9D4764DE /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,6 +190,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iQKit-Example/Pods-iQKit-Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CD0C1837F90ABFF9D4764DE /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iQKit-Example/Pods-iQKit-Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E88BC568D316243F760FA739 /* Check Pods Manifest.lock */ = {
