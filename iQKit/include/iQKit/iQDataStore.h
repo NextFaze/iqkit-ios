@@ -10,8 +10,6 @@
 #import <CoreData/CoreData.h>
 
 #import "iQBrowserTab.h"
-#import "iQChannelSet.h"
-#import "iQAppModes.h"
 
 #import "MOSearchLog.h"
 #import "MOMusicLog.h"
@@ -28,10 +26,6 @@ extern NSString * const iQDataStoreSaveChannelSetCompleteNotification;
 - (void)saveContext;
 - (void)flushEvents;
 - (void)clearDataStore;
-
-+ (iQChannelSet *)channelSetForAppMode:(iQAppMode)appMode;
-+ (iQChannel *)channelWithID:(NSNumber *)channelID;
-+ (void)saveChannelSet:(iQChannelSet *)channelSet forAppMode:(iQAppMode)appMode;
 
 @property (nonatomic, readonly) NSMutableArray *browserTabs;
 - (void)addBrowserTab:(iQBrowserTab *)broswerTab;

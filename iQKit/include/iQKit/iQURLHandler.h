@@ -13,10 +13,11 @@ extern NSString * const iQMethodIQMusic;
 extern NSString * const iQMethodURL;
 extern NSString * const iQMethodFullscreen;
 extern NSString * const iQMethodVideo;
+extern NSString * const iQMethodAppStore;
 
 @interface iQURLHandler : NSObject
 
-+ (NSDictionary*)handleURL:(NSURL *)url;
++ (NSDictionary *)parseURL:(NSURL *)url;
 + (id)parseComponentParameter:(NSString *)component withMethod:(NSString *)method;
 
 @end

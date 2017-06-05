@@ -1,6 +1,6 @@
 {
   "name": "iQKit",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "summary": "Search by iQNECT.",
   "description": "Search by iQNECT\n\n* text/keyword search\n* image search",
   "homepage": "https://github.com/iqnect-org/iqkit-ios",
@@ -11,11 +11,11 @@
   "authors": "iQNECT",
   "social_media_url": "https://twitter.com/iQNECT_org",
   "platforms": {
-    "ios": "7.0"
+    "ios": "8.0"
   },
   "source": {
     "git": "https://github.com/iqnect-org/iqkit-ios.git",
-    "tag": "0.9.1"
+    "tag": "0.9.2"
   },
   "source_files": "iQKit/include/iQKit/*.h",
   "public_header_files": "iQKit/include/iQKit/*.h",
@@ -35,22 +35,13 @@
       "~> 1.0"
     ],
     "SVProgressHUD": [
-      "1.0"
-    ],
-    "TPKeyboardAvoiding": [
-      "~> 1.0"
+      "~> 2.0"
     ],
     "SDWebImage": [
       "3.7.1"
     ],
-    "youtube-ios-player-helper": [
-      "~> 0.1.4"
-    ],
-    "REFrostedViewController": [
-      "2.4.8"
-    ],
     "SBJson": [
-      "~> 4.0.1"
+      "~> 5.0"
     ],
     "Masonry": [
 

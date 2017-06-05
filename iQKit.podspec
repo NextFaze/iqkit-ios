@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "iQKit"
-  s.version      = "0.9.1"
+  s.version      = "0.9.2"
   s.summary      = "Search by iQNECT."
   s.description  = <<-DESC
                    Search by iQNECT
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.author        = "iQNECT"
   s.social_media_url   = "https://twitter.com/iQNECT_org"
 
-  s.platform     = :ios, "7.0"
+  s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/iqnect-org/iqkit-ios.git", :tag => s.version.to_s }
   
   s.source_files = "iQKit/include/iQKit/*.h"
@@ -27,12 +27,9 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.dependency 'NFAllocInit', '~> 1.0'
-  s.dependency 'SVProgressHUD', '1.0'
-  s.dependency 'TPKeyboardAvoiding', '~> 1.0'
+  s.dependency 'SVProgressHUD', '~> 2.0'
   s.dependency 'SDWebImage', '3.7.1'
-  s.dependency 'youtube-ios-player-helper', '~> 0.1.4'
-  s.dependency 'REFrostedViewController', '2.4.8'
-  s.dependency 'SBJson', '~> 4.0.1'
+  s.dependency 'SBJson', '~> 5.0'
   s.dependency 'Masonry'
   s.dependency 'OpenCV', '2.4.9'
 
