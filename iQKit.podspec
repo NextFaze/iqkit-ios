@@ -12,7 +12,6 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/iqnect-org/iqkit-ios"
   s.license      = { :type => "Commercial", :text => "http://iqnect.org/business/terms-and-conditions/" }
   s.author        = "iQNECT"
-  s.social_media_url   = "https://twitter.com/iQNECT_org"
 
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/iqnect-org/iqkit-ios.git", :tag => s.version.to_s }
