@@ -8,7 +8,6 @@
 
 #import "iQModelObject.h"
 #import "iQKit.h"
-#import "iQKitMusicDetection.h"
 
 @interface iQMusicItem : iQModelObject
 
@@ -24,7 +23,5 @@
 @property (nonatomic, strong) NSString *albumLabel;
 @property (nonatomic, strong) NSString *albumYear;
 @property (nonatomic, strong) NSString *albumGenre;
-
-- (instancetype)initWithiQKitMusicDetectionResult:(iQKitMusicDetectionResult *)result;
 
 @end

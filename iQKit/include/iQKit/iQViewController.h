@@ -6,7 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "NFAllocInit.h"
+#import <NFAllocInit/NFAllocInit.h>
 
 @class iQViewController;
 
@@ -24,9 +24,9 @@
  The screen name, for purposes of Google Analytics tracking. If this is `nil`,
  no tracking calls will be made.
  */
-@property(nonatomic, copy)   NSString *screenName;
+@property (nonatomic, copy)   NSString *screenName;
 
-@property (nonatomic, assign) id<iQViewControllerDelegate> delegate;
+@property (nonatomic, weak) NSObject<iQViewControllerDelegate> *delegate;
 @property (nonatomic, strong) UIActivityIndicatorView *spinner;
 @property (nonatomic, strong) UIView *statusBarView;
 @property (nonatomic, strong) UITableView *tableView;

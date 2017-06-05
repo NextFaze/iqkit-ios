@@ -14,4 +14,7 @@
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 - (NSDictionary *)dictionaryRepresentation;
 
+// Parsing convenience
+- (id)stringForKey:(NSString *)key fromDictionary:(NSDictionary *)dictionary;
+
 @end

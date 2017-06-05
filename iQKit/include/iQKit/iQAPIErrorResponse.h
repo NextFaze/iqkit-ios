@@ -17,6 +17,6 @@ extern NSString * const IQAPICodeInvalidArgument;
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
-+(NSString*)stringForDictionary:(NSDictionary*)data;
+- (NSString*)stringForDictionary:(NSDictionary*)data;
 
 @end

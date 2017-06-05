@@ -10,11 +10,8 @@
 #import "iQStyle.h"
 #import "iQScannerViewController.h"
 #import "iQAPISearchRequest.h"
-#import "iQKitVoiceEngine.h"
 #import "iQNetworkStatus.h"
 #import "iQDataStore.h"
-#import "iQKitMusicDetection.h"
-#import "iQMainViewController.h"
 
 typedef NS_ENUM(NSUInteger, iQKitAPIServer) {
     iQKitAPIServerProduction,
@@ -86,21 +83,6 @@ typedef NS_ENUM(NSUInteger, iQKitAPIServer) {
  @param delegate the delegate.
  */
 @property (nonatomic, assign) NSObject<iQKitDelegate> *delegate;
-
-/*!
- @abstract Sets the iQKit voice recognition engine.
- 
- @param voiceEngine the implementation of the engine.
- */
-@property (nonatomic, strong) iQKitVoiceEngine *voiceEngine;
-
-/*!
- @abstract Sets the iQKit music detection engine.
- Will also call initialSetup when set.
- 
- @param musicDetectionEngine the implementation of the engine.
- */
-@property (nonatomic, strong) iQKitMusicDetection *musicDetectionEngine;
 
 /*!
  @abstract Sets the age of the app user.
