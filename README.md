@@ -90,29 +90,3 @@ This is the same as the Keyword search, except the parameter is of type `UIImage
     NSLog(@"Payload: %@", response.payload); 
 }];
 ```
-
-#### Comprehensive SDK
-This is the display of the main view from the iQNECT app, which includes the search bar, the search carousel and the web browser.
-When the third party app wants to display the iQNECT search view controller, it will do so via the standard presentation of a modal view controller in iOS:
-
-```objc
-iQMainViewController *mainViewController = [[iQMainViewController alloc] init];
-mainViewController.delegate = self;    
-[self presentViewController: mainViewController animated:YES completion:nil];
-```
-
-You can also inherit for this class to extend it further, and add menu buttons to the top left and right. Please see the example app for more information.
-
-#### Music Recognition
-To be able to use the music recognition views built into iQKit, the third party app will need to extend the iQKitMusicDetection class and set the engine in iQKit:
-```objc
-[[iQKit sharedInstance] setMusicDetectionEngine:<YOUR_IMPLEMENTED_CLASS_OBJECT>];
-```
-
-#### Voice Recognition
-To be able to use the voice recognition views built into iQKit, the third party app will need to extend the iQKitVoiceEngine class and set the engine in iQKit:
-```objc
-[[iQKit sharedInstance] setVoiceEngine:<YOUR_IMPLEMENTED_CLASS_OBJECT>];
-```
-
-
