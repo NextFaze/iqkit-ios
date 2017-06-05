@@ -41,16 +41,6 @@
     [galleryButton addTarget:self action:@selector(galleryButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:galleryButton];
     
-    UITextField *textField = [[UITextField alloc] init];
-    textField.frame = CGRectMake(padding, galleryButton.bottom + padding, scannerButton.width, scannerButton.height);
-    textField.backgroundColor = [[UIColor lightGrayColor] colorWithAlphaComponent:0.2];
-    textField.layer.cornerRadius = 4.0;
-    textField.placeholder = @"Enter Keyword";
-    textField.delegate = self;
-    textField.textAlignment = NSTextAlignmentCenter;
-    textField.returnKeyType = UIReturnKeyGo;
-    [self.view addSubview:textField];
-    
     [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
 }
 
@@ -126,19 +116,6 @@
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
     [self dismissViewControllerAnimated:YES completion:nil];
-}
-
-#pragma mark - UITextFieldDelegate
-
-- (BOOL)textFieldShouldReturn:(UITextField *)textField
-{
-    [textField resignFirstResponder];
-    [SVProgressHUD show];
-    [[iQAPISearchRequest requestWithKeyword:textField.text] runWithCompletionHandler:^(iQAPISearchResponse *response) {
-        [SVProgressHUD dismiss];
-        [self processSearchResponse:response];
-    }];
-    return YES;
 }
 
 @end

@@ -25,7 +25,7 @@ Initialization
 
 In your App Delegate, initialise the SDK with the App ID and secret you obtained from the [iQNECT Developer Portal](http://developer.iqnect.org):
 
-```ojbc
+```objc
 #import "iQKit.h"
 ```
 
@@ -69,17 +69,7 @@ When the search is complete, you will get a callback via the `iQScannerViewContr
 }
 ```
 
-In the callback, the `iQAPISearchResponse` ojbect has a `payload` property which is the URL returned by the search. Use this URL, typically to load in a web view or to open the iQNECT app.
-
-#### Keyword Search
-
-Unlike the vision search, keyword search does not present any UI. In this case, you will pass a keyword(`NSString`) to a SearchRequest object and send the request. There is a block parameter to place your response handling code.
-
-```objc
-[[iQAPISearchRequest requestWithKeyword:@"keyword"] runWithCompletionHandler:^(iQAPISearchResponse *response) {
-    NSLog(@"Payload: %@", response.payload); 
-}];
-```
+In the callback, the `iQAPISearchResponse` object has a `payload` property which is the URL returned by the search. Use this URL, typically to load in a web view or to open the iQNECT app.
 
 #### Image Search
 
