@@ -5,11 +5,11 @@
 //
 
 #import "iQViewController.h"
+#import "iQScannerOverlayView.h"
 #import <AVFoundation/AVFoundation.h>
 
 @class iQScannerViewController;
 @class iQAPISearchResponse;
-@class iQScannerOverlayView;
 
 typedef NS_ENUM(NSInteger, iQScannerViewControllerIntent) {
     iQScannerViewControllerIntentBarcode,

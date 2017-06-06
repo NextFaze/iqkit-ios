@@ -27,7 +27,7 @@ EXTERNAL SOURCES:
     :path: ".."
 
 SPEC CHECKSUMS:
-  iQKit: '0870cc2490cca87d206195881add29014df0c2fc'
+  iQKit: a2e8bbea575bb87b590f5f90b51345e25b10d715
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   NFAllocInit: b72c4d7ada11797bf150c92bea6a0f816bba10e8
   OpenCV: bb17904e55fc19b1f0f6c3e29bc04a7dd31eddb9
